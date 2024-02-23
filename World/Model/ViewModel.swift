@@ -34,6 +34,9 @@ class ViewModel {
     var solarEarth: EarthEntity.Configuration = .solarEarthDefault
     var solarSatellite: SatelliteEntity.Configuration = .solarTelescopeDefault
     var solarMoon: SatelliteEntity.Configuration = .solarMoonDefault
+    
+    // MARK: - Photo
+    var isShowingPhoto: Bool = false
 
     var solarSunDistance: Double = 700
     var solarSunPosition: SIMD3<Float> {

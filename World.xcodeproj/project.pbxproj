@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EDF31F72B873F6D00AD8FE6 /* Photogrammetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF31F62B873F6D00AD8FE6 /* Photogrammetry.swift */; };
+		5EDF31F92B87408800AD8FE6 /* PhotoToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF31F82B87408800AD8FE6 /* PhotoToggle.swift */; };
+		5EDF31FB2B8741A500AD8FE6 /* PhotoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF31FA2B8741A500AD8FE6 /* PhotoModule.swift */; };
+		5EDF31FD2B87421A00AD8FE6 /* PhotoSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF31FC2B87421A00AD8FE6 /* PhotoSettings.swift */; };
 		C200227D2988392F00732240 /* Entity+Sunlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200227C2988392F00732240 /* Entity+Sunlight.swift */; };
 		C200227F29883B3900732240 /* GlobeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200227E29883B3900732240 /* GlobeSettings.swift */; };
 		C20197A429E3D9C900C6A20F /* SatelliteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20197A329E3D9C900C6A20F /* SatelliteEntity.swift */; };
@@ -53,8 +57,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6FD03BD460C2666C0917AC9F /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		BA5D813EE652D2B6F9AA7B35 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		5EDF31F62B873F6D00AD8FE6 /* Photogrammetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photogrammetry.swift; sourceTree = "<group>"; };
+		5EDF31F82B87408800AD8FE6 /* PhotoToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoToggle.swift; sourceTree = "<group>"; };
+		5EDF31FA2B8741A500AD8FE6 /* PhotoModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModule.swift; sourceTree = "<group>"; };
+		5EDF31FC2B87421A00AD8FE6 /* PhotoSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSettings.swift; sourceTree = "<group>"; };
+		6FD03BD460C2666C0917AC9F /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		BA5D813EE652D2B6F9AA7B35 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C200227C2988392F00732240 /* Entity+Sunlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Sunlight.swift"; sourceTree = "<group>"; };
 		C200227E29883B3900732240 /* GlobeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobeSettings.swift; sourceTree = "<group>"; };
 		C20197A329E3D9C900C6A20F /* SatelliteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatelliteEntity.swift; sourceTree = "<group>"; };
@@ -124,6 +132,16 @@
 			path = .;
 			sourceTree = "<group>";
 		};
+		5EDF31F52B873F2200AD8FE6 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF31F62B873F6D00AD8FE6 /* Photogrammetry.swift */,
+				5EDF31F82B87408800AD8FE6 /* PhotoToggle.swift */,
+				5EDF31FA2B8741A500AD8FE6 /* PhotoModule.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
 		C22CF1A829721FB100CF2EB7 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +187,7 @@
 		C22D1AF028EB403400CE0F8F /* World */ = {
 			isa = PBXGroup;
 			children = (
+				5EDF31F52B873F2200AD8FE6 /* Photo */,
 				C22D1AF128EB403400CE0F8F /* WorldApp.swift */,
 				C2DEDA222996F5ED00F5265B /* Modules */,
 				C25774D929E23F7400A75567 /* Globe */,
@@ -294,6 +313,7 @@
 				C2F2CA332A391D4200E1C2A2 /* EarthSettings.swift */,
 				C2F2CA352A391D6B00E1C2A2 /* SatelliteSettings.swift */,
 				C258918E2975EB7E0071BD5F /* SliderGridRow.swift */,
+				5EDF31FC2B87421A00AD8FE6 /* PhotoSettings.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -390,6 +410,7 @@
 				C200227D2988392F00732240 /* Entity+Sunlight.swift in Sources */,
 				C253D5772947E44200B292CA /* OrbitSettings.swift in Sources */,
 				C25617D829CCB6040064FD50 /* SolarSystemControls.swift in Sources */,
+				5EDF31F72B873F6D00AD8FE6 /* Photogrammetry.swift in Sources */,
 				C205CF972919CD070067444C /* Sun.swift in Sources */,
 				C2F2CA362A391D6B00E1C2A2 /* SatelliteSettings.swift in Sources */,
 				C2C1C8DB29ECA8CC00DA5D97 /* EarthEntity+Configuration.swift in Sources */,
@@ -404,13 +425,16 @@
 				C2F31EFC29CC01BC009742AD /* TableOfContents.swift in Sources */,
 				C2DEDA242996FAAB00F5265B /* GlobeControls.swift in Sources */,
 				C2E652D42919E41A007934BC /* SolarSystemSettings.swift in Sources */,
+				5EDF31FD2B87421A00AD8FE6 /* PhotoSettings.swift in Sources */,
 				C2F31EF829CA8F4E009742AD /* Modules.swift in Sources */,
 				C20197A629E4805900C6A20F /* SatelliteEntity+Configuration.swift in Sources */,
 				C25774DB29E23F8D00A75567 /* GlobeModule.swift in Sources */,
 				C25774E129E240EC00A75567 /* OrbitModule.swift in Sources */,
 				C2A0F2B029D115150009D46C /* SettingsButton.swift in Sources */,
+				5EDF31F92B87408800AD8FE6 /* PhotoToggle.swift in Sources */,
 				C22D1AF228EB403400CE0F8F /* WorldApp.swift in Sources */,
 				C2E652D62919EBAB007934BC /* ViewModel.swift in Sources */,
+				5EDF31FB2B8741A500AD8FE6 /* PhotoModule.swift in Sources */,
 				C25774D629E219FE00A75567 /* DragRotationModifier.swift in Sources */,
 				C2B0AEED2994B35600021509 /* RotationSystem.swift in Sources */,
 				C2B0AEEF2994B39300021509 /* TraceSystem.swift in Sources */,

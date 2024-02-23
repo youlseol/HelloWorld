@@ -64,6 +64,7 @@ extension Module {
         case .globe: GlobeSettings()
         case .orbit: OrbitSettings()
         case .solar: SolarSystemSettings()
+        case .photo: PhotoSettings()
         }
     }
 }

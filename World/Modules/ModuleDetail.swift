@@ -39,6 +39,8 @@ struct ModuleDetail: View {
                                 .accessibilitySortPriority(2)
                         case .solar:
                             SolarSystemToggle()
+                        case .photo:
+                            PhotoToggle()
                         }
                     }
                     .frame(width: textWidth, alignment: .leading)
@@ -73,6 +75,7 @@ extension Module {
         case .globe: GlobeModule()
         case .orbit: OrbitModule()
         case .solar: SolarSystemModule()
+        case .photo: PhotoModule()
         }
     }
 }
